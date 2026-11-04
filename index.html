@@ -29,7 +29,7 @@ th.num,td.num{width:31px;text-align:center;padding-left:1px;padding-right:1px;fo
 .schedule-list{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;padding:4px 10px}
 .match{padding:10px 5px;border-bottom:1px solid #343638;min-width:0}
 .match-date{color:#c6a7ff;font-size:.82rem;font-weight:850;margin-bottom:4px}
-.match-teams{display:flex;align-items:center;justify-content:space-between;gap:7px;font-size:.9rem;line-height:1.25}
+.match-teams{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:7px;font-size:.9rem;line-height:1.25}.match-teams>*:first-child{text-align:left;min-width:0}.match-teams>*:nth-child(2){justify-self:center;min-width:3.4em;text-align:center}.match-teams>*:last-child{text-align:right;min-width:0}
 .match-teams b{color:#fff}.score{background:#3d216f;border:1px solid #9b6bea;border-radius:4px;padding:2px 7px;font-weight:950;white-space:nowrap}.vs{color:#c6a7ff;font-weight:900}
 .match-meta{color:#aaa;font-size:.72rem;margin-top:4px}.match.upcoming{background:#171819}
 @media(max-width:600px){.schedule-panel{margin:9px 0}.schedule-list{grid-template-columns:1fr;padding:2px 8px}.match{padding:9px 3px}.match-date{font-size:11px}.match-teams{font-size:12px;gap:5px}.match-meta{font-size:10px}}
